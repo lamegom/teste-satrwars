@@ -1,0 +1,144 @@
+{
+	"info": {
+		"_postman_id": "ad5c6cef-4512-4bcf-bb8c-82a018d3e2b9",
+		"name": "Teste-Planetas-StarWars",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "salvar planeta",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n   \"nome\":\"Tatooine\",\r\n    \"clima\":\"arido\",\r\n\t\"terreno\":\"deserto\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/api/v1/planetas",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"planetas"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Listar planetas do banco de dados",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/api/v1/planetas",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"planetas"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": " Listar planetas da API do Star Wars",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/api/v1/planetas-starwars",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"planetas-starwars"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Buscar por nome no banco de dados",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/api/v1/planetas/nome/Tatooine",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"planetas",
+						"nome",
+						"Tatooine"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Buscar por ID no banco de dados",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/api/v1/planetas/id/5ee91392757ce22b4012158b",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"planetas",
+						"id",
+						"5ee91392757ce22b4012158b"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Remover planeta",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/api/v1/planetas/5ee91392757ce22b4012158b",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"planetas",
+						"5ee91392757ce22b4012158b"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
